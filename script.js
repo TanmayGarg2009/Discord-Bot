@@ -16,7 +16,22 @@ const handleScrollAnimation = () => {
     });
 };
 
-window.addEventListener("scroll", () => { handleScrollAnimation(); });
-
-// Run animation on page load for visible elements
+window.addEventListener("scroll", handleScrollAnimation);
 window.addEventListener("load", handleScrollAnimation);
+
+// Feature Modal
+const modal = document.getElementById("featureModal");
+const modalTitle = document.getElementById("modalTitle");
+const modalContent = document.getElementById("modalContent");
+const closeBtn = document.querySelector(".close");
+
+document.querySelectorAll(".feature-card").forEach(card => {
+    card.addEventListener("click", () => {
+        modal.style.display = "block";
+        modalTitle.innerText = card.getAttribute("data-title");
+        modalContent.innerText = card.getAttribute("data-content");
+    });
+});
+
+closeBtn.addEventListener("click", () => { modal.style.display = "none"; });
+window.addEventListener("click", (e) => { if (e.target == modal) modal.style.display = "none"; });
