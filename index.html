@@ -9,28 +9,25 @@
 </head>
 <body>
 
-<!-- Sidebar Navigation -->
-<nav class="sidebar">
-  <ul>
-    <li><a href="#about">About</a></li>
-    <li><a href="#why-us">Why Choose Us</a></li>
-    <li><a href="#features">Features</a></li>
-    <li><a href="#botinfo">Discord Bot Info</a></li>
-    <li><a href="#pricing">Pricing</a></li>
-    <li><a href="#register">Register/Login</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-</nav>
-
-<!-- Hero Section -->
+<!-- Top Navigation -->
 <header>
+  <nav class="top-nav">
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#why-us">Why Choose Us</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#botinfo">Discord Bot Info</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#register">Get Your Bot</a></li>
+      <li><a href="#contact-section">Contact</a></li>
+    </ul>
+  </nav>
+  
   <div class="hero-content animate-on-scroll">
     <h1>Your Dream Discord Bot, Delivered Professionally</h1>
     <p>Custom bots with moderation, tickets, economy, levels, and more</p>
-    <div class="hero-btns">
-      <a href="#register" class="btn">Get Started</a>
-      <a href="#contact" class="btn secondary">Contact Me</a>
-    </div>
+    <a href="#register" class="btn">Get Your Bot</a>
+    <a href="#contact-section" class="btn secondary">Contact Me</a>
   </div>
 </header>
 
@@ -67,25 +64,20 @@
 <section id="features">
   <h2>Features</h2>
   <div class="container features">
-    <div class="feature-card animate-on-scroll" data-title="Moderation Bot" data-content="Kick, ban, automod & keep your server safe and clean.">
+    <div class="feature-card animate-on-scroll" data-title="Moderation Bot" data-content="Kick, ban, automod & keep your server safe and clean. Includes customizable permissions, logging, and role management.">
       <h3>Moderation Bot</h3>
-      <p>Kick, ban, automod & keep your server safe and clean.</p>
     </div>
-    <div class="feature-card animate-on-scroll" data-title="Tickets & Support" data-content="Easy-to-use ticketing system to handle user issues efficiently.">
+    <div class="feature-card animate-on-scroll" data-title="Tickets & Support" data-content="Easy-to-use ticketing system to handle user issues efficiently. Users can create tickets, moderators can reply, close, and assign priority.">
       <h3>Tickets & Support</h3>
-      <p>Easy-to-use ticketing system to handle user issues efficiently.</p>
     </div>
-    <div class="feature-card animate-on-scroll" data-title="Leveling & Economy" data-content="Gamify your server with XP, levels, and server currency.">
+    <div class="feature-card animate-on-scroll" data-title="Leveling & Economy" data-content="Gamify your server with XP, levels, and server currency. Includes leaderboards, rewards, and daily bonuses.">
       <h3>Leveling & Economy</h3>
-      <p>Gamify your server with XP, levels, and server currency.</p>
     </div>
-    <div class="feature-card animate-on-scroll" data-title="Custom Commands" data-content="Create any command you want tailored to your server.">
+    <div class="feature-card animate-on-scroll" data-title="Custom Commands" data-content="Create any command you want tailored to your server. Fully configurable triggers and responses.">
       <h3>Custom Commands</h3>
-      <p>Create any command you want tailored to your server.</p>
     </div>
-    <div class="feature-card animate-on-scroll" data-title="Database & Storage" data-content="Persistent storage for all your server data and settings.">
+    <div class="feature-card animate-on-scroll" data-title="Database & Storage" data-content="Persistent storage for all your server data and settings. Supports JSON, SQLite, or any custom database you prefer.">
       <h3>Database & Storage</h3>
-      <p>Persistent storage for all your server data and settings.</p>
     </div>
   </div>
 </section>
@@ -94,9 +86,9 @@
 <section id="botinfo" class="animate-on-scroll">
   <h2>What is a Discord Bot?</h2>
   <div class="container">
-    <p>Discord bots are automated programs designed to perform tasks within a server. They can moderate chat, manage roles, handle tickets, track levels and experience, automate commands, and integrate with external APIs.</p>
-    <p>How it works: Bots use the Discord API to read events from your server, like messages, reactions, or member joins. They respond programmatically using Python code.</p>
-    <p>Benefits: Save time managing your server, improve engagement, gamify your community, and add professional automation without manual work.</p>
+    <p>Discord bots are automated programs that perform tasks within a server, including moderation, leveling, ticket management, custom commands, and more.</p>
+    <p>How it works: Bots interact with the Discord API to respond to messages, reactions, joins, and other events, executing commands as per your server's rules.</p>
+    <p>Benefits: Save time, engage your community, automate repetitive tasks, and provide a professional experience to your server members.</p>
   </div>
 </section>
 
@@ -107,47 +99,34 @@
     <div class="price-card animate-on-scroll">
       <h3>Basic</h3>
       <p>₹500</p>
-      <ul>
-        <li>Moderation + Logging</li>
-      </ul>
-      <a href="#register" class="btn">Contact Me</a>
+      <p>Moderation + Logging</p>
     </div>
     <div class="price-card animate-on-scroll">
       <h3>Standard</h3>
       <p>₹800</p>
-      <ul>
-        <li>Tickets + Economy + Levels</li>
-      </ul>
-      <a href="#register" class="btn">Contact Me</a>
+      <p>Tickets + Economy + Levels</p>
     </div>
     <div class="price-card animate-on-scroll">
       <h3>Advanced</h3>
       <p>₹1000+</p>
-      <ul>
-        <li>Full Custom Bot + Database + Extra Features</li>
-      </ul>
-      <a href="#register" class="btn">Contact Me</a>
+      <p>Full Custom Bot + Database + Extra Features</p>
     </div>
   </div>
 </section>
 
-<!-- Register/Login UI Section -->
+<!-- Get Your Bot Section -->
 <section id="register" class="animate-on-scroll">
-  <h2>Register / Login</h2>
-  <div class="login-container">
-    <p>Sign up or log in to manage your bot or request support</p>
-    <button class="oauth-btn google">Login with Google</button>
-    <button class="oauth-btn github">Login with GitHub</button>
-    <button class="oauth-btn phone">Login with Phone</button>
-  </div>
+  <h2>Get Your Bot</h2>
+  <p>Ready to bring your dream bot to life? Click below to contact me directly.</p>
+  <button class="btn" id="contact-btn">Contact Me</button>
 </section>
 
 <!-- Contact Section -->
-<section id="contact" class="animate-on-scroll">
-  <h2>Contact Me</h2>
+<section id="contact-section" class="animate-on-scroll">
+  <h2>Contact</h2>
   <p>Discord: <strong>nobodyguessed</strong></p>
   <p>Email: <strong>tanmaygarg12321@gmail.com</strong></p>
-  <a href="https://discord.gg/your-support-server-link" class="btn contact-btn" target="_blank">Open Ticket Support</a>
+  <a href="https://discord.gg/your-support-server-link" target="_blank" class="btn">Open Ticket Support</a>
 </section>
 
 <!-- Footer -->
@@ -162,6 +141,25 @@
     <span class="close">&times;</span>
     <h3 id="modalTitle"></h3>
     <p id="modalContent"></p>
+  </div>
+</div>
+
+<!-- Contact Modal -->
+<div id="contactModal" class="modal">
+  <div class="modal-content">
+    <span class="close-contact">&times;</span>
+    <h3>Contact Me</h3>
+    <p><strong>Discord:</strong> nobodyguessed</p>
+    <p><strong>Email:</strong> tanmaygarg12321@gmail.com</p>
+    <p><strong>Commands Demonstration & Bot Features:</strong></p>
+    <ul>
+      <li>Moderation: kick, ban, automod, logging</li>
+      <li>Tickets & Support: create, assign, close tickets</li>
+      <li>Leveling & Economy: XP, coins, leaderboards, daily rewards</li>
+      <li>Custom Commands: fully configurable commands and triggers</li>
+      <li>Database & Storage: persistent storage for server data and settings</li>
+    </ul>
+    <p>Contact me on Discord or Email to get your custom bot today!</p>
   </div>
 </div>
 
