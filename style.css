@@ -68,3 +68,27 @@ section p { font-size:1.4rem; margin-bottom:20px; color:#ccc; }
   font-size: 22px;
   font-weight: 700;
 }
+/* Bigger Header Area with Large Logo */
+.top-nav {
+    height: 110px; /* increased height */
+    padding: 25px 0;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    position: absolute;
+    left: 20px;
+}
+
+.logo {
+    height: 60px; /* bigger logo */
+    width: auto;
+}
+
+.brand-name {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+}
