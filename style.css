@@ -45,3 +45,26 @@ section p { font-size:1.4rem; margin-bottom:20px; color:#ccc; }
 
 /* Responsive */
 @media(max-width:768px){ .container{flex-direction:column; align-items:center;} header h1{font-size:3rem;} header p{font-size:1.2rem;} section h2{font-size:2.2rem;} section p{font-size:1.1rem;} }
+
+/* Logo */
+.logo-container {
+  position: fixed;
+  top: 10px;
+  left: 15px;
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.site-logo {
+  width: 55px;
+  height: 55px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.logo-text {
+  font-size: 22px;
+  font-weight: 700;
+}
