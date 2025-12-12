@@ -1,146 +1,138 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
-
+/* GLOBAL */
 body {
-  background: #0f0f18;
-  color: white;
+    margin: 0;
+    background: #0d0d0d;
+    color: white;
+    font-family: Arial, sans-serif;
 }
 
-/* NAVBAR */
+/* NAV */
 .navbar {
-  width: 100%;
-  padding: 20px 40px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #111;
+    border-bottom: 1px solid #222;
 }
 
-.nav-links {
-  display: flex;
-  list-style: none;
-  gap: 25px;
+.logo {
+    width: 45px;
+    height: 45px;
+    margin-right: 10px;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+}
+
+.logo-text {
+    font-size: 24px;
+    font-weight: bold;
 }
 
 .nav-links a {
-  color: white;
-  text-decoration: none;
-  font-weight: 600;
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
 }
 
-.hamburger {
-  display: none;
-  flex-direction: column;
-  gap: 5px;
-  cursor: pointer;
-}
-
-.hamburger span {
-  width: 28px;
-  height: 3px;
-  background: white;
-  border-radius: 2px;
-}
-
-/* SIDEBAR */
-.sidebar {
-  position: fixed;
-  left: -300px;
-  top: 0;
-  width: 260px;
-  height: 100vh;
-  background: #161621;
-  padding: 30px;
-  transition: 0.3s;
-}
-
-.sidebar a {
-  display: block;
-  color: white;
-  text-decoration: none;
-  padding: 12px 0;
-  font-size: 18px;
-}
-
-.close-btn {
-  text-align: right;
-  font-size: 26px;
-  cursor: pointer;
-  margin-bottom: 20px;
-}
-
-/* HERO */
 .hero {
-  text-align: center;
-  padding: 120px 20px;
-}
-
-.cta-btn {
-  background: #5865f2;
-  padding: 14px 28px;
-  border-radius: 8px;
-  border: none;
-  cursor: pointer;
-  margin-top: 20px;
-  font-size: 18px;
-  color: white;
+    padding: 80px;
+    text-align: center;
 }
 
 /* SECTIONS */
 .section {
-  padding: 100px 40px;
-  text-align: center;
+    padding: 60px;
+    text-align: center;
 }
 
-.cards, .feature-grid, .pricing-grid {
-  display: flex;
-  justify-content: center;
-  gap: 25px;
-  flex-wrap: wrap;
-  margin-top: 25px;
+.dark {
+    background: #141414;
 }
 
-.card, .feature-card, .price-card {
-  background: #1b1b29;
-  padding: 30px;
-  border-radius: 14px;
-  width: 260px;
-  cursor: pointer;
-}
-
-.feature-card:hover, .card:hover, .price-card:hover {
-  transform: translateY(-5px);
-  transition: 0.3s;
-}
-
-/* POPUPS */
-.popup {
-  display: none;
-  position: fixed;
-  inset: 0;
-  background: rgba(0,0,0,0.7);
-  justify-content: center;
-  align-items: center;
-}
-
-.popup-box {
-  background: #1a1a27;
-  padding: 30px;
-  width: 90%;
-  max-width: 400px;
-  border-radius: 14px;
-  text-align: center;
-}
-
-/* MOBILE RESPONSIVE */
-@media (max-width: 1024px) {
-  .nav-links {
-    display: none;
-  }
-  .hamburger {
+.feature-grid, .pricing-grid {
     display: flex;
-  }
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.feature-card, .price-card {
+    background: #1b1b1b;
+    padding: 20px;
+    border-radius: 12px;
+    width: 250px;
+    cursor: pointer;
+    border: 1px solid #333;
+    transition: 0.2s;
+}
+
+.feature-card:hover,
+.price-card:hover {
+    background: #222;
+}
+
+/* POPUP */
+.popup-bg {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(5px);
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #1c1c1c;
+    padding: 30px;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* RESPONSIVE FIXES FOR MOBILE — PC LOOK UNCHANGED */
+@media (max-width: 850px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links {
+        margin-top: 10px;
+    }
+
+    .nav-links a {
+        display: inline-block;
+        margin: 8px;
+        font-size: 20px;
+    }
+
+    .hero {
+        padding: 40px;
+    }
+
+    .section {
+        padding: 40px 20px;
+    }
+
+    .feature-grid, .pricing-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .price-card, .feature-card {
+        width: 90%;
+    }
 }

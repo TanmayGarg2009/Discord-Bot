@@ -1,43 +1,19 @@
-function openSidebar() {
-  document.getElementById("sidebar").style.left = "0px";
-}
-function closeSidebar() {
-  document.getElementById("sidebar").style.left = "-300px";
-}
-
 function openContactPopup() {
-  document.getElementById("contactPopup").style.display = "flex";
-}
-function closeContactPopup() {
-  document.getElementById("contactPopup").style.display = "none";
+    document.getElementById("popup-bg").style.display = "block";
+    document.getElementById("contact-popup").style.display = "block";
 }
 
-function openFeature(type) {
-  let title = "";
-  let desc = "";
+function openFeature(title, desc, extra) {
+    document.getElementById("popup-bg").style.display = "block";
+    document.getElementById("feature-popup").style.display = "block";
 
-  if (type === "mod") {
-    title = "Moderation System";
-    desc = "Kick, ban, timeout, auto-mod, anti-spam, logs & more.";
-  } else if (type === "ticket") {
-    title = "Ticket System";
-    desc = "Users can create support tickets, auto-close, logs & transcripts.";
-  } else if (type === "level") {
-    title = "Leveling & Economy";
-    desc = "XP system, coins, leaderboards, rewards & custom economy.";
-  } else if (type === "custom") {
-    title = "Custom Commands";
-    desc = "Any command you want. Utility, fun, info, automation & more.";
-  } else if (type === "database") {
-    title = "Database Storage";
-    desc = "All data saved safely using JSON or database depending on tier.";
-  }
-
-  document.getElementById("featureTitle").innerText = title;
-  document.getElementById("featureDesc").innerText = desc;
-  document.getElementById("featurePopup").style.display = "flex";
+    document.getElementById("feature-title").innerText = title;
+    document.getElementById("feature-desc").innerText = desc;
+    document.getElementById("feature-extra").innerText = extra;
 }
 
-function closeFeature() {
-  document.getElementById("featurePopup").style.display = "none";
+function closePopups() {
+    document.getElementById("popup-bg").style.display = "none";
+    document.getElementById("contact-popup").style.display = "none";
+    document.getElementById("feature-popup").style.display = "none";
 }
